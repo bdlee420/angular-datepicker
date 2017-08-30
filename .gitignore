@@ -1,4 +1,4 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+﻿# See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
 /tmp
@@ -35,4 +35,7 @@ testem.log
 .DS_Store
 Thumbs.db
 
-dist
+/.vs/angular-datepicker/v15/.suo
+/.vs/config/applicationhost.config
+/.vs/slnx.sqlite
+/.vs/slnx.sqlite-journal
