@@ -650,8 +650,6 @@ var DayCalendarComponent = DayCalendarComponent_1 = (function () {
             ? this.utilsService.convertToMoment(this.displayDate, this.componentConfig.format).clone()
             : this.utilsService
                 .getDefaultDisplayDate(this.currentDateView, this.selected, this.componentConfig.allowMultiSelect);
-        if (this.currentDateView)
-            this.selected.push(this.currentDateView);
         this.weeks = this.dayCalendarService
             .generateMonthArray(this.componentConfig, this.currentDateView, this.selected);
         this.weekdays = this.dayCalendarService

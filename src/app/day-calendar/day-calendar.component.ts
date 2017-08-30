@@ -103,10 +103,7 @@ export class DayCalendarComponent implements OnInit, OnChanges, ControlValueAcce
 		this.currentDateView = this.displayDate
 			? this.utilsService.convertToMoment(this.displayDate, this.componentConfig.format).clone()
 			: this.utilsService
-				.getDefaultDisplayDate(this.currentDateView, this.selected, this.componentConfig.allowMultiSelect);
-
-        if (this.currentDateView)
-			this.selected.push(this.currentDateView);
+				.getDefaultDisplayDate(this.currentDateView, this.selected, this.componentConfig.allowMultiSelect);       
 
 		this.weeks = this.dayCalendarService
 			.generateMonthArray(this.componentConfig, this.currentDateView, this.selected);
